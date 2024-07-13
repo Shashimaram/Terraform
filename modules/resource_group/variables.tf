@@ -1,8 +1,3 @@
-variable "rg_count" {
-    type = number
-    description = "(optional)The number of resource groups to create. If set to 1 or less, only one resource group will be created."
-}
-
 variable "rg_name" {
   type        = string
   description = "The name of the resource group to create."

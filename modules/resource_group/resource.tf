@@ -1,6 +1,7 @@
 resource "azurerm_resource_group" "default" {
-  count = var.rg_count > 1 ? var.rg_count : 1
-  name = var.rg_count > 1 ? "rg-${var.rg_name}-${count.index}" : var.rg_name
+  # count = var.rg_count > 1 ? var.rg_count : 1
+  # name = var.rg_count > 1 ? "rg-${var.rg_name}-${count.index}" : var.rg_name
+  name = "rg-${var.rg_name}"
   location = var.location
 
   timeouts {
